@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MatTypeaheadLibrary": {
+    "ngx-mat-authorization": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -121,6 +121,41 @@
             "production": {
               "devServerTarget": "MatTypeaheadLibrary:serve:production"
             }
+          }
+        }
+      }
+    },
+    "NgxMatAuthorization": {
+      "projectType": "library",
+      "root": "projects/ngx-mat-authorization",
+      "sourceRoot": "projects/ngx-mat-authorization/src",
+      "prefix": "NgxMat",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-mat-authorization/tsconfig.lib.json",
+            "project": "projects/ngx-mat-authorization/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-mat-authorization/src/test.ts",
+            "tsConfig": "projects/ngx-mat-authorization/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-mat-authorization/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-mat-authorization/tsconfig.lib.json",
+              "projects/ngx-mat-authorization/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }

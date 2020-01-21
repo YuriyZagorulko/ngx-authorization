@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-mat-authorization": [
+        "dist/ngx-mat-authorization"
+      ],
+      "ngx-mat-authorization/*": [
+        "dist/ngx-mat-authorization/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
