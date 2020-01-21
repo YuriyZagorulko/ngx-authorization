@@ -1,6 +1,6 @@
 {
   "name": "ngx-mat-authorization",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "in process...",
   "keywords": [
     "angular",
@@ -8,6 +8,7 @@
     "typescript",
     "authentication"
   ],
+  "repository": "https://github.com/YuriyZagorulko/ngx-authorization.git",
   "author": "Yuri Zagorulko",
   "license": "MIT",
   "scripts": {
