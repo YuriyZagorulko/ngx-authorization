@@ -11,6 +11,9 @@
   "repository": "https://github.com/YuriyZagorulko/ngx-authorization.git",
   "author": "Yuri Zagorulko",
   "license": "MIT",
+  "files": [
+    "dist/MatTypeaheadLibrary/*"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
