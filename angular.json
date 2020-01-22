@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-mat-authorization": {
+    "MatTypeaheadLibrary": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -159,6 +159,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "MatTypeaheadLibrary"
 }
