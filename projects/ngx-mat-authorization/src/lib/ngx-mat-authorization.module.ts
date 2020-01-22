@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
-import { NgxMatAuthorizationComponent } from './ngx-mat-authorization.component';
-
 
 
 @NgModule({
-  declarations: [NgxMatAuthorizationComponent],
+  declarations: [],
   imports: [
   ],
-  exports: [NgxMatAuthorizationComponent]
+  exports: []
 })
 export class NgxMatAuthorizationModule { }
